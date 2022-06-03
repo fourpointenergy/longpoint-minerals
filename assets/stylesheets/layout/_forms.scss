@@ -1,0 +1,16 @@
+.selling-form-wrap {
+  background-color: white;
+  @include angle(both);
+  &:after {
+    @include below-tablet-portrait {
+      bottom: -7vw;
+    }
+    bottom: -4vw;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  .h5-blue-caps {
+    color: #649BAF;
+  }
+}

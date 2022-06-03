@@ -1,0 +1,79 @@
+@media print {
+  .text-show {
+    color: black;
+  }
+  .hero-wrap {
+    border: 3px solid black;
+  }
+  .slateimg {
+
+    opacity: 0;
+  }
+
+  .hero-inner {
+    h2 {
+      color: black !important;
+      opacity: 1 !important;
+      display: block !important;
+    }
+  }
+
+  .arve-wrapper {
+    display: none !important;
+  }
+
+  .blockquote {
+    span {
+      color: black !important;
+      background: white !important;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: black;
+    }
+  }
+
+  .card-header {
+    color: black !important;
+    background: white !important;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: black;
+  }
+
+  .team-member-wrapper, .card-wrapper {
+    display: block !important;
+    flex-wrap: initial !important;
+  }
+
+  .team-member, .card {
+    display: inline-block !important;
+    float: left;
+    width: 30%;
+
+  }
+  .blue-overlay-team:after {
+    display: none !important;
+  }
+
+  .about-hero {
+    .hero-inner {
+      color: black;
+    }
+  }
+
+  .accordion-content {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .stats {
+    li {
+      span, p {
+        color: black !important;
+        opacity: 1;
+      }
+    }
+  }
+
+}

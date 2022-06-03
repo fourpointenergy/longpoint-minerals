@@ -1,0 +1,171 @@
+.where-buy-wrap {
+  p {
+    margin: 0;
+  }
+}
+
+.sell-form-header {
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+      content: '1';
+      background-color: $teal;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      padding: 2px 8px;
+      font-weight: 400;
+      margin-right: 5px;
+    }
+  }
+}
+
+.contact-cards > .feature-card {
+  margin-bottom: 2rem;
+}
+
+
+.lp-form {
+  @include tablet-portrait-and-up {
+    padding-right: 3rem;
+  }
+  .gform_button {
+    @extend .btn;
+    @extend .btn-gray;
+  }
+  input {
+    background-color: $form-gray;
+    border: none;
+    padding: 10px !important;
+  }
+
+  .ginput_container_textarea {
+    textarea {
+      background-color: $form-gray;
+      border: none;
+    }
+  }
+  .gfield {
+    margin-bottom: 21px;
+  }
+  label.gfield_label {
+    font-weight: 400 !important;
+  }
+  .ginput_container_select, .ginput_container_multiselect {
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/images/icon-down.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30px;
+      height: 15px;
+      right: 12px;
+      top: 50%;
+      pointer-events: none;
+      margin-top: -4px;
+    }
+  }
+  .gform_button {
+    width: 100% !important;
+  }
+
+  // Selling form styles
+  ul.gform_fields.column {
+    @media(min-width: 768px) {
+      width: 47%;
+    }
+  }
+  ul.gform_fields.column_2 {
+    @media(min-width: 768px) {
+      margin-right: 3.5% !important;
+    }
+  }
+
+  .gform_body {
+    max-width: 900px;
+  }
+
+  .description_above .gfield_description {
+    float: none;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+    color: #757575;
+    padding-bottom: 4px !important;
+  }
+
+  .column_3 .sell-form-header p:before {
+    content: '2';
+  }
+  .gform_confirmation_message {
+    padding: 1rem;
+  }
+}
+
+.gform_wrapper .gform_ajax_spinner {
+  max-width: 35px;
+}
+
+
+.gform_confirmation_wrapper.lp-form {
+  // min-height: 15vw;
+  display: table;
+  @extend .shadow-border;
+  margin: 3rem auto;
+  @include tablet-portrait-and-up {
+    width: 60%;
+  }
+}
+
+.gform_confirmation_message h2 {
+  @include text(300, $font-oswald);
+  color: $light-blue-gray;
+  font-size: $h2-sm;
+  @include tablet-portrait-and-up {
+    font-size: $h2-lg;
+  }
+}
+
+#gform_confirmation_wrapper_1 {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+// County multi-select dropdown styling
+@media(min-width: 768px) {
+  .gform_wrapper.lp-form_wrapper .chosen-container.chosen-container-multi .chosen-choices {
+    min-height: 54px !important;
+    border-radius: 4px;
+  }
+
+  .gform_wrapper.lp-form_wrapper .chosen-container .chosen-results li {
+    padding: 8px 15px;
+  }
+
+  // thie chosen county
+  .gform_wrapper.lp-form_wrapper .chosen-container-multi .chosen-choices li.search-choice {
+    line-height: 2;
+  }
+
+  // where it says 'click to select'
+  .gform_wrapper.lp-form_wrapper .ginput_container.ginput_container_multiselect .chosen-container.chosen-container-multi ul.chosen-choices li.search-field input.default {
+    height: 100%;
+  }
+
+  .gform_wrapper .chosen-container-multi .chosen-choices li.search-field {
+    height: 54px;
+  }
+
+  .gform_wrapper .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    height: 50px !important;
+  }
+}
+
+.contact-page .h5-blue-caps {
+  color: #649BAF;
+}

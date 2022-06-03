@@ -1,0 +1,86 @@
+.team {
+  background-color: $light-gray;
+}
+.team-member {
+  color: #9C6D3A;
+  @include below-tablet-portrait {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  h3 {
+    margin-top: 1.25rem;
+  }
+  .box-inner {
+    background-color: white;
+  }
+}
+
+.left-content {
+  @media(min-width: 640px) {
+    padding-right: 4rem;
+  }
+}
+
+.team-title {
+  color: $gold;
+}
+
+.team-member-overlay {
+  position: relative;
+  margin-bottom: 4rem;
+  top: 30px;
+  left: 2.5%;
+  width: 95%;
+  z-index: 1063;
+  background-color: rgba(255,255,255,0.97);
+  @include tablet-portrait-and-up {
+    top: 80px;
+  }
+  h3 {
+    color: $gold;
+  }
+}
+
+.detail-inner {
+  > span {
+    width: 100%;
+    max-width: 600px;
+    @include tablet-portrait-and-up {
+      max-width: 33.33%;
+    }
+  }
+}
+
+.team-overlay-background {
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.member-img {
+  max-width: 100%;
+  display: block;
+}
+
+.team-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 90px;
+
+  img {
+    max-width: 30px;
+  }
+}
+
+.team-first-paragraph {
+  &:after {
+    top: -20px;
+  }
+}

@@ -1,0 +1,58 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-bottom {
+  position: relative;
+  color: $dark-gray;
+  align-self: stretch;
+  justify-content: center;
+  // @media(min-width: 832px) {
+  //   min-height: 385px;
+  // }
+  // @media(min-width: 930px) {
+  //   min-height: 340px;
+  // }
+  // @media(min-width: 1100px) {
+  //   min-height: 300px;
+  // }
+  h2 {
+    color: $gray-btn-hover;
+    line-height: 1.3;
+		font-size: 1.57rem;
+    margin-top: 1.5rem;
+    align-self: center;
+		font-weight: bold;
+		@media (min-width: 52em) {
+			font-size: 1.875rem;
+		}
+    @media(min-width: 768px) and (max-width: 1070px) {
+      font-size: 1.35rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+  p {
+    line-height: 1.5;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+.card-copy {
+  align-self: flex-end;
+}
+
+.inner {
+  background-color: white;
+  img {
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+  }
+}
+
+.card-wrap {
+  flex-direction: row;
+  flex-flow: row wrap;
+}

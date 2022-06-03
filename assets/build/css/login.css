@@ -1,0 +1,50 @@
+
+/* Login Styles Here */
+#login {
+  color: white;
+  max-width: 520px;
+  width: 90%;
+}
+
+#login p {
+  /* text-align: center; */
+  margin: 15px 0;
+}
+
+#login .message {
+  color: black;
+}
+
+
+body.login #nav a,  body.login #backtoblog a  {
+  color: white !important;
+}
+
+body.login #login {
+  width: 90%;
+  max-width: 520px;
+}
+
+p.login .message {
+  color: #00263a;
+}
+
+#login_error {
+  color: #dc3232;
+  text-align: center;
+}
+
+.login-msg-above {
+  border-radius: 0;
+  background-color: white;
+  margin-bottom: 0 !important;
+  border-bottom: 0;
+  box-shadow: 0;
+  font-weight: normal;
+  text-align: left;
+  padding: 25px !important;
+}
+
+#loginform {
+  margin-top: 0;
+}

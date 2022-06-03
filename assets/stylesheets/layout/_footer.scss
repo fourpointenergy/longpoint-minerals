@@ -1,0 +1,24 @@
+footer {
+  background-color: white;
+  @include angle(after);
+  &:after {
+    transform-origin: -50%;
+    height: 110%;
+    bottom: -15px;
+  }
+}
+
+.contact-info-wrap {
+  @media (min-width: 40em) {
+    padding-left: 4rem;
+    margin-left: 3rem;
+  }
+}
+
+.contact-info {
+  letter-spacing: 1px;
+}
+
+.footer-logo {
+  max-width: 250px;
+}

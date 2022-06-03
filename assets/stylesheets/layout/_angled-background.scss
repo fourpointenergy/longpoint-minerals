@@ -1,0 +1,9 @@
+.angled-bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 100px 0;
+  @media(min-width: 768px) {
+    background-attachment: fixed;
+  }
+}
