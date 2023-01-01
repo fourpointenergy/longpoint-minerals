@@ -28,13 +28,13 @@
 .team-member-overlay {
   position: relative;
   margin-bottom: 4rem;
-  top: 80px;
+  top: 30px;
   left: 2.5%;
   width: 95%;
   z-index: 1063;
   background-color: rgba(255,255,255,0.97);
   @include tablet-portrait-and-up {
-    top: 120px;
+    top: 80px;
   }
   h3 {
     color: $gold;
