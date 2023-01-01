@@ -18,25 +18,6 @@
 
 .stats li {
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-}
-
-@media screen and (max-width: 400px), (min-width: 832px) and (max-width: 1000px) {
-  .stats li {
-    flex-direction: column;
-  }
-
-  .stats li .big-num {
-    margin: 0 0 15px;
-  }
-
-  .stats li p {
-    text-align: center;
-    width: auto;
-  }
 }
 
 .big-num, .stats-font-style {
